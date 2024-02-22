@@ -13,7 +13,7 @@ namespace ReactAspCrud.Models
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=DESKTOP-B0CVUV9;Initial Catalog=studentDb;Integrated Security=True");
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-B0CVUV9;Initial Catalog=studentDb;Integrated Security=True;TrustServerCertificate=True;") ;
         }
     }
 }
